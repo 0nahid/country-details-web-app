@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import { Container, Row } from 'react-bootstrap';
+import { Container, Row, Col ,Button } from 'react-bootstrap';
 import CountryList from '../CountryList/CountryList';
 
 const Country = () => {
@@ -12,7 +12,16 @@ const Country = () => {
 
     return (
         <Container>
-            <Row>
+            <Row className="mt-2">
+                <Col md={10} >
+                    <div className="input-group">
+                        <input type="text" className="form-control" placeholder="Search for specific Country" />
+                        <Button variant="info">Search</Button>
+                    </div>
+                </Col>
+                <Col md={2} >
+                    <Button variant="dark">Dark Mode</Button>
+                </Col>
                 {
                     country.map(country => <CountryList country={country} key={country.numericCode} > </CountryList>)
                 }

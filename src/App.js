@@ -5,18 +5,19 @@ import NotMatch from './components/NotMatch/NotMatch';
 import Country from './components/Country/Country';
 function App() {
   return (
-    <Router>
+    <div>
       <Header></Header>
-
-      <Switch>
-        <Route exact path="/">
-          <Country></Country>
-        </Route>
-        <Route path="*">
-          <NotMatch></NotMatch>
-        </Route>
-      </Switch>
-    </Router>
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <Country></Country>
+          </Route>
+          <Route path="*">
+            <NotMatch></NotMatch>
+          </Route>
+        </Switch>
+      </Router>
+    </div>
   );
 }
 
