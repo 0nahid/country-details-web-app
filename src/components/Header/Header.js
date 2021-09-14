@@ -6,7 +6,7 @@ const Header = () => {
         <div>
             <Navbar bg="light" expand="lg">
                 <Container>
-                    <Navbar.Brand href="/home">Country Details</Navbar.Brand>
+                    <Navbar.Brand href="/">Country Details</Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
                         <Nav className="ms-auto">
