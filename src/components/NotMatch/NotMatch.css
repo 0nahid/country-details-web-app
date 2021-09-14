@@ -9,11 +9,11 @@
   --third-color: #000;
   --body-font: "Montserrat", sans-serif;
 }
-body {
+/* body {
   margin: 0;
   font-family: var(--body-font);
   background-color: var(--third-color);
-}
+} */
 #notfound {
   position: relative;
   height: 100vh;

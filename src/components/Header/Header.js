@@ -4,9 +4,9 @@ import { Navbar, Nav, Container } from 'react-bootstrap';
 const Header = () => {
     return (
         <div>
-            <Navbar bg="light" expand="lg">
+            <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
                 <Container>
-                    <Navbar.Brand href="/">Country Details</Navbar.Brand>
+                    <Navbar.Brand href="/">Where in the world?</Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
                         <Nav className="ms-auto">
@@ -17,8 +17,7 @@ const Header = () => {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-
-        </div>
+        </div >
     );
 };
 

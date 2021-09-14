@@ -2,7 +2,7 @@ import React from 'react';
 import './NotMatch.css';
 const NotMatch = () => {
     return (
-        <div>
+        <div className="bg-dark">
             <div id="notfound">
                 <div class="notfound">
                     <div class="notfound-404">
