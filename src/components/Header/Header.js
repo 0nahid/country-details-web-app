@@ -10,9 +10,9 @@ const Header = () => {
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
                         <Nav className="ms-auto">
-                            <Nav.Link href="/home">Home</Nav.Link>
-                            <Nav.Link href="#action2">Link</Nav.Link>
-                            <Nav.Link href="#action2">Link</Nav.Link>
+                            <Nav.Link href="/">Home</Nav.Link>
+                            <Nav.Link href="https://github.com/0nahid">Github</Nav.Link>
+                            <Nav.Link href="https://github.com/0nahid/country-details-web-app">Repo</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

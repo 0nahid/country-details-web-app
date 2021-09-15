@@ -3,6 +3,8 @@ import Header from './components/Header/Header';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import NotMatch from './components/NotMatch/NotMatch';
 import Country from './components/Country/Country';
+import CountryDetails from './components/CountryDetails/CountryDetails';
+import Footer from './components/Footer/Footer';
 function App() {
   return (
     <div>
@@ -12,12 +14,16 @@ function App() {
           <Route exact path="/">
             <Country></Country>
           </Route>
+          <Route path="/country/:country">
+            <CountryDetails></CountryDetails>
+          </Route>
           <Route path="*">
             <NotMatch></NotMatch>
           </Route>
         </Switch>
       </Router>
-    </div>
+      <Footer></Footer>
+    </div >
   );
 }
 
